@@ -1,0 +1,42 @@
+/* ========== TRASNFORMAÇÕES ==========
+
+  transform:  
+    scaleX(0.00) scaleY(0.00) -->> ESCALA EM X e Y DO OBJETO
+    translate(0px,0px)        -->> POSICIONAMENTO X e Y DO OBJETO
+    
+  
+*/
+
+div {
+    width: 100px;
+    height: 100px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.35s; /* Safari 4.0 - 8.0 */
+    animation-name: animacao;
+    animation-duration: 0.35s;
+    background-color: gray;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animacao {
+    from {
+    		transform:  scaleX(0.00) scaleY(0.00) ;
+    		background-color: gray;
+    	}
+    to {
+    		transform:  scaleX(1.00) scaleY(1.00);
+    		background-color: gray;
+    	}
+}
+
+/* Demais navegadores */
+@keyframes animacao {
+    from {
+    		transform:  scaleX(0.00) scaleY(0.00) ;
+    		background-color: black;
+    }
+    to {
+    		transform:  scaleX(1.00) scaleY(1.00) ;
+    		background-color: gray;
+    	}
+}

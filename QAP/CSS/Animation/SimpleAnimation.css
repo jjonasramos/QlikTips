@@ -1,10 +1,11 @@
-/* ========== TRASNFORMAÇÕES ==========
+/* ========== http://cssanimate.com/ ==========
+
+  opacity: 1;                 -->> OPACIDADE DO OBJETO
 
   transform:  
     scaleX(0.00) scaleY(0.00) -->> ESCALA EM X e Y DO OBJETO
     translate(0px,0px)        -->> POSICIONAMENTO X e Y DO OBJETO
-    
-  
+    rotate(0deg);             -->> ROTAÇÃO DO OBJETO
 */
 
 div {
@@ -32,11 +33,11 @@ div {
 /* Demais navegadores */
 @keyframes animacao {
     from {
-    		transform:  scaleX(0.00) scaleY(0.00) ;
+    		transform:  scaleX(0.00) scaleY(0.00) rotate(0deg);
     		background-color: black;
     }
     to {
-    		transform:  scaleX(1.00) scaleY(1.00) ;
+    		transform:  scaleX(1.00) scaleY(1.00) rotate(360deg);
     		background-color: gray;
     	}
 }

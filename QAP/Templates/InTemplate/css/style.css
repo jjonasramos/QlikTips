@@ -1,31 +1,76 @@
-.nav-item  {
-    float: left;
-    display: block;
-    color: #;
-    text-align: center;
-    padding: 14px 35px;
-    text-decoration: none;
-    font-size: 17px;
-  	border-bottom: 2px solid transparent;
+.fundo {
+  background: #fcfcfc;
+  height: 1000px;
 }
 
-.nav-item:hover{
-	border-bottom: 2px solid #005198;
-	color: white
-}
-
-.titulo:hover {
-	border-bottom: 2px solid transparent;
-}
-
+/* ======= NAVBAR SUPERIOR ======= */
 .navbar {
-	padding: 0px;
+  padding: 20px;
 }
 
 .menuSuperior {
-	padding: 15px
+  background: white;
 }
 
-.menuSuperior foto {
-	opacity: 50;
+.navbar h {
+  color: #005198;
+  padding-left: 15px;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ======= MENU LATERAL ======= */
+
+.menuLateral {
+  width: 20%;
+  height: 100%;
+  background: white;
+  margin-top: 10px;
+  border-radius: 0px 7px 7px 0px;
+}
+
+.nav-link {
+  border-right: 4px solid transparent;
+}
+
+.nav-link:focus {
+  color: #005198;
+  border-right: 4px solid #005198;
+  background: #fbfbfb; 
+}
+
+.nav-link:hover {
+  color: #005198;
+}
+
+.infoPagina {
+  font-size: 12px;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: #c0c0c0;
+}
+
+.tituloPagina {
+  color: gray;
+}
+
+.countProcessosHint {
+  float: right;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 480px)  {
+  .navbar h {
+      font-size: 18px;
+  }
+
+  .logo {
+    width: 20%;
+    height: 20%;;
+  }
+
+  .menuLateral {
+    width: 100%;
+    height: auto;
+  }
 }

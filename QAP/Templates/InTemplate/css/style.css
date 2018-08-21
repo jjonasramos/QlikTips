@@ -1,0 +1,31 @@
+.nav-item  {
+    float: left;
+    display: block;
+    color: #;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+    font-size: 17px;
+  	border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover{
+	border-bottom: 2px solid #005198;
+	color: white
+}
+
+.titulo:hover {
+	border-bottom: 2px solid transparent;
+}
+
+.navbar {
+	padding: 0px;
+}
+
+.menuSuperior {
+	padding: 15px
+}
+
+.menuSuperior foto {
+	opacity: 50;
+}

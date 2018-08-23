@@ -14,18 +14,32 @@
 	
   <body>
 
-		<div class="fundo">
-				<div class="menuSuperior">
-						<nav class="navbar navbar-light">
-								<a class="navbar-brand" href="#">
-									<img src="https://i.imgur.com/3mYoHL9.png" width="15%" height="15%" class="d-inline-block align-top logo" alt="">
-									<h class="d-inline-block align-top">JUSTIÇA EM NÚMEROS</h>
-								</a>
-							</nav>
-				</div>
-				
-				<div class="menuLateral">
-						<nav class="nav flex-column">
+	<div id="wrapper">
+		<div class="menuSuperior">
+			<nav class="navbar navbar-light">
+				<a class="navbar-brand" href="#">
+						<img src="https://i.imgur.com/3mYoHL9.png" width="15%" height="15%" class="d-inline-block align-top logo" alt="">
+						<h class="d-inline-block align-top">JUSTIÇA EM NÚMEROS</h>
+					</a>
+				</nav>
+		</div>
+			
+		<div id="menuLateral">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand">
+					<a href="#"> Hello World</a>
+				</li>
+				<li>
+					<a href="#"> Link 1</a>
+				</li>
+				<li>
+					<a href="#"> Link 2</a>
+				</li>
+			</ul>
+
+
+
+						<!-- <nav class="nav flex-column">
 								<a class="nav-link" href="#1">
 									<div class="tituloPagina">Resumo</div>
 									<div class="infoPagina">
@@ -73,13 +87,33 @@
 											<span class="countProcessosHint">430</span>
 										</div>
 								</a>
-						</nav>
-				</div>
+						</nav> -->
 		</div>
+
+		<div id="conteudo-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1>Template Dashboard</h1>
+						<p>Total: 123</p>
+						<p>Total: <code>#conteudo-wrapper</code></p>
+						<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+	
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("wrapper").toggleClass("toggled");
+		});
+	</script>
+</body>
 </html>

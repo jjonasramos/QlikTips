@@ -19,7 +19,7 @@
     width: 200px;
     height: 100%;
     background: var(--corMenus);
-    left: -120px;
+    left: -138px;
     transition: all 500ms ease;
     font-size: 0px;
 }
@@ -63,11 +63,11 @@
 #menuLateral .info {
     color: var(--corInfoMenu);
     font-size: 12px;
-    display: none;
+    
 }
 
 #menuLateral .info>.count{
-    float: right;
+    float: none;
     padding-right: 10px;
 }
 

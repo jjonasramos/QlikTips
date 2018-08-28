@@ -1,27 +1,24 @@
 toggleSideBar();
 
 function toggleSideBar() {
-    document.getElementById("menuLateral").classList.toggle('active');
+    var menuLateralFechado = document.getElementById("menuLateral")
+    menuLateralFechado.classList.toggle('active');
 
-    // HABILITAR ICONE E OCULTAS AS INFORMACOES DE CADA CONTEXTO
-    var menuLateralFechado = document.getElementsByClassName("imagem")[0].style.visibility;
-
-    if(menuLateralFechado == "hidden") {
+    if(!menuLateralFechado.classList.contains('active')) {
         $(".info").each(function(index, element) {
-            element.style.visibility = "hidden";
+            element.style.display = "none";
         });
 
-        $(".imagem").each(function(index, element) {
-            element.style.visibility = "visible";
+        $(".pagina").each(function(index, element) {
+            element.style.display = "none";
         });
-
     } else {
         $(".info").each(function(index, element) {
-            element.style.visibility = "visible";
+            element.style.display = "inline";
         });
 
-        $(".imagem").each(function(index, element) {
-            element.style.visibility = "hidden";
+        $(".pagina").each(function(index, element) {
+            element.style.display = "inline";
         });
     }    
 }

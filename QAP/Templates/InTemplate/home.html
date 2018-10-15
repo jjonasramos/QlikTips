@@ -1,35 +1,47 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 
     <title>ORGÃO - DASHBOARD</title>
-  </head>
-	
-  <body>
+</head>
+
+<body>
     <div>
+        <div class="menuSuperior">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.imgur.com/3mYoHL9.png" width="15%" height="15%" class="d-inline-block align-top logo" alt="">
+                    <h class="d-inline-block align-top">JUSTIÇA EM NÚMEROS</h>
+                </a>
+            </nav>
+        </div>
+
         <div id="menuLateral">
-            <div class="toggle-btn" onclick="toggleSideBar()">
+            <div class="toggle-btn" onclick="toggleSideBar()" style="cursor: pointer;">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul style="font-size: 16px;">
-                <li onclick="location.href='page.html';"> 
+                <li onclick="location.href='page.html';">
                     <div class="contentLi">
                         <!-- <i class="fas fa-home icon"></i> -->
-                        <img src="http://cdn.onlinewebfonts.com/svg/img_158445.png">
-                        <span class="pagina">Home</span>      
+                        <img src="img/baseline_home_black_18dp.png" class="iconeMenuLateral" style="width: 25px; height: 25px; opacity: 0.7;">
+                        <span class="pagina">Início</span>
                     </div>
-                    
+
                     <div class="info">
                         <span>Total de processos: </span>
                         <span class="count">430</span>
@@ -39,38 +51,47 @@
                         </span> -->
                     </div>
                 </li>
-    
+
                 <li onclick="location.href='page.html';">
-                    <div>
-                        <i class="fas fa-home icon"></i>
-                        <span class="pagina">Home1</span>  
+                    <div class="contentLi">
+                        <!-- <i class="fas fa-home icon"></i> -->
+                        <img src="img/baseline_gavel_black_18dp.png" class="iconeMenuLateral" style="width: 25px; height: 25px; opacity: 0.7;">
+                        <span class="pagina">Processos</span>
                     </div>
 
                     <div class="info">
                         <span>Total de processos: </span>
                         <span class="count">430</span>
+
+                        <!-- <span class="imagem">
+                            <img src="https://png.pngtree.com/element_pic/00/16/07/165789984e908db.jpg" width="20%" height="20%" style="float:none">
+                        </span> -->
                     </div>
                 </li>
-    
-                <li onclick="location.href='page.html';">
-                    <div>
-                        <i class="fas fa-home icon"></i>
-                        <span class="pagina">Home2</span>  
 
+                <li onclick="location.href='page.html';">
+                    <div class="contentLi">
+                        <!-- <i class="fas fa-home icon"></i> -->
+                        <img src="img/baseline_assessment_black_18dp.png" class="iconeMenuLateral" style="width: 25px; height: 25px; opacity: 0.7;">
+                        <span class="pagina">Detalhes</span>
                     </div>
 
                     <div class="info">
                         <span>Total de processos: </span>
                         <span class="count">430</span>
-                    </div>   
+
+                        <!-- <span class="imagem">
+                            <img src="https://png.pngtree.com/element_pic/00/16/07/165789984e908db.jpg" width="20%" height="20%" style="float:none">
+                        </span> -->
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
-    
+
 
     <div id="menuFiltros">
-        <div class="toggle-btn-right" onclick="toggleRightBar()">
+        <div class="toggle-btn-right" onclick="toggleRightBar()" style="cursor: pointer;">
             <span>
                 FILTROS
             </span>
@@ -82,13 +103,32 @@
         </ul>
     </div>
 
+    <div id="conteudo">
+        <div class="row tituloPagina">
+            <div class="col-12 ">
+                <h5>Início</h5>
+            </div>
+        </div>
+
+        <div class="row conteudoPagina">
+            <div class="col-12 ">
+                UASHDUAHSUDHSAUDHASUDHASUDHUASHDUSAHDUASHDUASHDUSAHDUASHDUSAHDUAHSUDHSADUSHAUDH
+            </div>
+        </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
 
 <script type="text/javascript" src="js/home.js"></script>

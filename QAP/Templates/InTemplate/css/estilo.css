@@ -1,7 +1,11 @@
 /* ================ VARIAVEIS ================ */
 :root {
-    --corMenus: #005198;
-    --corMenusHover: #1f77c4;
+    --corMenus: white;
+    --corOcultaMenu: #707070;
+    --corMenuFiltros: blue;
+    --corMenusHover: #fafafa;
+    --corFundoFiltros: #707070;
+    --corFundoFiltrosVerde: #6eb43f;
     --corTextoMenu: white;
     --corInfoMenu: lightgrey;
     --bordaItemMenuLateral: 1px solid rgba(255, 255, 255, 0.1);
@@ -14,11 +18,19 @@
     font-family: sans-serif; 
 }
 
+.menuSuperior {
+    background: white;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1), 0 2px 1px 0 rgba(0,0,0,0.01);
+}
+
 #menuLateral {
     position: fixed;
     width: 80px;
     height: 100%;
     background: var(--corMenus);
+    box-shadow: 0 0 4px rgba(0,0,0,0.1), 0px 2px 1px 0 rgba(0,0,0,0.01);
+    margin-top: 8px;
+    border-radius: 0 6px 0 0;
     left: 0px;
     transition: all 500ms ease;
     font-size: 0px;
@@ -32,7 +44,7 @@
 }
 
 #menuLateral ul li {
-    color:white;
+    color:var(--corOcultaMenu);
     list-style: none;
     padding: 15px 10px;
     border-bottom: var(--bordaItemMenuLateral);
@@ -53,8 +65,12 @@
     display: block;
     width: 30px;
     height: 5px;
-    background: var(--corMenus);
+    background: var(--corOcultaMenu);
     margin: 5px 0px;
+}
+
+.pagina {
+    margin-left: 10px;
 }
 
 #menuLateral.active .toggle-btn {
@@ -97,7 +113,7 @@
     margin-top: 50px;
     width: 200px;
     height: auto;
-    background: var(--corMenus);
+    background: var(--corFundoFiltros);
     right: -200px;
     transition: all 500ms ease;
     border-radius: 0px 0px 0px 10px;
@@ -109,7 +125,7 @@
 }
 
 #menuFiltros ul li {
-    color: var(--corTextoMenu);
+    color: var(--corOcultaMenu);
     list-style: none;
     padding: 15px 10px;
     border-bottom: 1px solid rgba(100, 100, 100, 0.3);
@@ -126,7 +142,7 @@
     display: block;
     width: 100px;
     height: 30px;
-    background: var(--corMenus);
+    background: var(--corFundoFiltrosVerde);
     margin: 0px 0px;
     text-align: center;
     margin: auto;
@@ -134,4 +150,21 @@
     font-size: 14px;
     border-radius: 10px 0px 0px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* CONTEUDO */
+
+#conteudo {
+    width: 100%;
+    height: 100%;
+}
+
+#conteudo .tituloPagina {
+    margin-left: 280px; 
+    margin-top: 35px;
+}
+
+#conteudo .conteudoPagina {
+    margin-left: 215px; 
+    margin-top: 65px;
 }

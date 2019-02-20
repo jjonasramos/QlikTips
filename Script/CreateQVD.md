@@ -8,8 +8,12 @@ Copy and enjoy it :)
 
 ```
 SUB CreateQVD(Table);
+  Trace ==== Generating QVD file of "$(Table)" ====;
+  
   STORE [$(Table)] INTO [lib://HereIsYourLib/$(Table).qvd] (qvd);
   DROP TABLE [$(Table)];
+  
+  Trace ==== "$(Table)" was dropped ====;
 EndSub;
 ```
 
@@ -21,8 +25,12 @@ CALL CreateQVD('Your Table Name without [ ]');
 
 ```
 SUB CreateQVD(Table, Name);
+  Trace ==== Generating QVD file of "$(Name)" ====;
+  
   STORE [$(Table)] INTO [lib://HereIsYourLib/$(Name).qvd] (qvd);
   DROP TABLE [$(Table)];
+  
+  Trace ==== "$(Name)" was dropped ====;
 EndSub;
 ```
 

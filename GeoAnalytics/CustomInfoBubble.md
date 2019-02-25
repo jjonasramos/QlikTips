@@ -1,6 +1,6 @@
 # Custom info bubble
 
-Remember: All alternatives you can use [HTML tags](https://www.w3schools.com/tags/ref_byfunc.asp) and [Qlik Chart Expressions](https://help.qlik.com/en-US/qlikview/November2017/Subsystems/Client/Content/ChartFunctions/chart-expressions.htm).
+Remember: You can use [HTML tags](https://www.w3schools.com/tags/ref_byfunc.asp) and [Qlik Chart Expressions](https://help.qlik.com/en-US/qlikview/November2017/Subsystems/Client/Content/ChartFunctions/chart-expressions.htm).
 
 Copy and enjoy it :)
 

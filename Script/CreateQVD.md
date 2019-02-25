@@ -8,11 +8,10 @@ Copy and enjoy it :)
 
 ```
 SUB CreateQVD(Table);
-  
   STORE [$(Table)] INTO [lib://HereIsYourLib/$(Table).qvd] (qvd);
   DROP TABLE [$(Table)];
   
-  Trace ==== "Generating qvd file of "$(Table)"... Done! ====;
+  Trace ==== "Generating QVD file of "$(Table)"... Done! ====;
 EndSub;
 ```
 
@@ -24,12 +23,10 @@ CALL CreateQVD('Your Table Name without [ ]');
 
 ```
 SUB CreateQVD(Table, Name);
-  Trace ==== Generating QVD file of "$(Name)" ====;
-  
   STORE [$(Table)] INTO [lib://HereIsYourLib/$(Name).qvd] (qvd);
   DROP TABLE [$(Table)];
   
-  Trace ==== "Generating qvd file of "$(Name)"... Done! ====;
+  Trace ==== "Generating QVD file of "$(Name)"... Done! ====;
 EndSub;
 ```
 

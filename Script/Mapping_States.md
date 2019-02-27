@@ -4,12 +4,12 @@ The below code use [Mapping Table](https://help.qlik.com/en-US/sense/February201
 
 Copy and enjoy it :)
 
-## Mapping Load - States of Brazil
+## Version 1 - States of Brazil - State to Abbreviation
 
 ```
 Mapping_States:
 Mapping Load * Inline [
-  STATE,               STATE_UF	  	 
+  STATE,               STATE_ABBR	  	 
   Acre,                AC
   Alagoas,             AL
   Amapá,               AP
@@ -37,5 +37,40 @@ Mapping Load * Inline [
   São Paulo,           SP
   Sergipe,             SE
   Tocantins,           TO
+];
+```
+## Version 2 - States of Brazil - Abbreviation to State
+
+```
+Mapping_States:
+Mapping Load * Inline [
+  STATE_ABBR,  STATE	  	 
+  AC,          Acre
+  AL,          Alagoas
+  AP,          Amapá
+  AM,          Amazonas
+  BA,          Bahia
+  CE,          Ceará
+  DF,          Distrito Federal
+  ES,          Espírito Santo
+  GO,          Goiás
+  MA,          Maranhão
+  MT,          Mato Grosso
+  MS,          Mato Grosso do Sul
+  MG,          Minas Gerais
+  PA,          Pará
+  PB,          Paraíba
+  PR,          Paraná
+  PE,          Pernambuco
+  PI,          Piauí
+  RJ,          Rio de Janeiro
+  RN,          Rio Grande do Norte
+  RS,          Rio Grande do Sul
+  RO,          Rondônia
+  RR,          Roraima
+  SC,          Santa Catarina
+  SP,          São Paulo
+  SE,          Sergipe
+  TO,          Tocantins
 ];
 ```

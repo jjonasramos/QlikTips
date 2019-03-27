@@ -1,6 +1,6 @@
 # Desenvolvimento de extensões para o Qlik Sense
 
-Este documento tem como objetivo 
+Este artigo tem como objetivo exemplificar e detalhar alguns passos e tecnicas que podem ser utilizados durante o processo de criação de uma extensão qualquer.
 
 # Estrutura do código padrão
 

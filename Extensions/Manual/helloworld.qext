@@ -1,0 +1,9 @@
+{
+	"name" : "Hello World, Eniosss.",
+	"description" : "Teste.",
+	"icon" : "extension",
+	"preview" : "qlik-sense-logo.png",
+	"type" : "visualization",
+	"version": "0.1",
+	"author": "Qlik"
+}

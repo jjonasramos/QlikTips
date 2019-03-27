@@ -27,7 +27,7 @@ var aparencia = {
 		uses: "settings"
     };
 ` 
-> ![Tux, the Linux mascot](/assets/images/aparencia.png)
+> ![Tux, the Linux mascot](https://github.com/jjonasramos/QlikTips/blob/master/Extensions/Manual/assets/images/aparencia.PNG)
 
 ### Dados
 `
@@ -35,7 +35,7 @@ var dados = {
 		uses: "data"
     };
 ` 
-> ![Tux, the Linux mascot](/assets/images/dados.png)
+> ![Tux, the Linux mascot](https://github.com/jjonasramos/QlikTips/blob/master/Extensions/Manual/assets/images/dados.PNG)
 
 ### Medidas
 `
@@ -45,7 +45,7 @@ var medida = {
 		max: 1
     };
 ` 
-> ![Tux, the Linux mascot](/assets/images/medida.png)
+> ![Tux, the Linux mascot](https://github.com/jjonasramos/QlikTips/blob/master/Extensions/Manual/assets/images/medida.PNG)
 
 ### Dimensões
 `
@@ -55,7 +55,7 @@ var dimensão = {
 		max: 1
     };
 ` 
-> ![Tux, the Linux mascot](/assets/images/dimensao.png)
+> ![Tux, the Linux mascot](https://github.com/jjonasramos/QlikTips/blob/master/Extensions/Manual/assets/images/dimensao.PNG)
 
 
 ## Criando seções customizadas
@@ -89,4 +89,4 @@ Depois criamos uma seção. Não é necessário definir o **type**, pois o compo
         }
     };
 `
-> ![Tux, the Linux mascot](/assets/images/custom_section.png)
+> ![Tux, the Linux mascot](https://github.com/jjonasramos/QlikTips/blob/master/Extensions/Manual/assets/images/custom_section.PNG)

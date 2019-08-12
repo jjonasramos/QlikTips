@@ -2,7 +2,7 @@
 
 Case you need to create a custom virtual proxy, you can follow the below steps:
 
-1. Go to QMC and Virtual Proxies and create new;
+1. Go to QMC, Virtual Proxies tab and create new;
 2. On Description, you can set it using a custom name;
 3. On Prefix, you can set it with your custom prefix;
 4. Uncheck "Is Default Virtual Proxy" case it's not the default virtual proxy;

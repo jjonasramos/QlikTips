@@ -3,18 +3,18 @@
 
 
 1. Stop all Qlik services (except Repository Database service);
-2. Execute the application on path C:\Program Files\Qlik\Sense\Repository\Util\QlikSenseUtil;
+2. Execute the application on path C:\ %Program Files% \Qlik\Sense\Repository\Util\QlikSenseUtil;
 3. Connect Database using user and password where you can found on String Connection tab and press OK;
 4. Change the paths with the new computer hostname;
-5. Open CMD on Administrator Mode and change directory (cd) to "C:\<ProgramFiles>\Qlik\Sense\Repository";
+5. Open CMD on Administrator Mode and change directory (cd) to "C:\ %ProgramFiles% \Qlik\Sense\Repository";
 6. Execute the command ".\Repository.exe -bootstrap -standalone -restorehostname";
-7. Go to the directory "C:\<ProgramData>\Qlik\Sense\ and open the file "host.cfg"; 
+7. Go to the directory "C:\ %ProgramData% \Qlik\Sense\ and open the file "host.cfg"; 
   - Hint: you need to use https://www.base64decode.org/ to decode de content of host file and create another one using https://www.base64encode.org/
 8. Restart the Qlik Sense Repository Database service and start the others stopped Qlik services;
 9. In your browser, try to access Hub using the new hostname;
 
 
-### In Case it still not working:
+### In case it still not working:
 
 10. On Windows Search Bar, search by "mmc" and open it;
 11. Go to File > Add/Remove Snap-in;

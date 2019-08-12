@@ -1,15 +1,18 @@
-## UAHEUAHEUAHEUAHEUAHE
+## Create a custom Virtual Proxy
 
-Criar um novo Virtual Proxy.
+Case you need to create a custom virtual proxy, you can follow the below steps:
 
-Entrar no novo Virtual Proxy, dar um novo nome e mudar o session cookie (nome deve ser unico). OBS: pode ou nao ter um prefixo
+1. Go to QMC and Virtual Proxies and create new;
+2. On Description, you can set it using a custom name;
+3. On Prefix, you can set it with your custom prefix;
+4. Uncheck "Is Default Virtual Proxy" case it's not the default virtual proxy;
+5. On Session Cookie Header Name, you have to set it using a unique name;
+6. Go to the Authentication tab and set as you wish;
+  - Hint: It will define how you log in to the server.
+7. Go to the Load Balancing tab and add a new server node;
+  - Select the default server node (proxy).
+8. Go to the Proxies tab (last item) and link it to the Central proxy server
 
-Entrar em Load Balancing > Adiconar um Node vinculando ao proxy do server.
+Example: https://path/hub (without prefix)
 
-Ainda dentro do novo Virtual Proxy, acessar Proxies (ultimo item), e Linkar com o Proxy do server.
-
-Cada Virtual Proxie pode ter um estilo de autenticacao
-
-Ex: https://node/hub (Sem prefixo)
-
-Ex: https://node/teste/hub (Com prefixo)
+Example: https://path/custom_prefix/hub (with prefix)

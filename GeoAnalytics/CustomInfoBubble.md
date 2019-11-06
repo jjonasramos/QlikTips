@@ -7,11 +7,11 @@ Copy and enjoy it :)
 ## Info Table
 
 ```
-='<b>' & Header & '</b>' & 
-    '<table>
-       <tr><td>'&'Label0: '&'</td><td>'& 'Value0' &'</td></tr>
-       <tr><td>'&'Label1: '&'</td><td>'& 'Value1' & '</td></tr> 
-       <tr><td>'&'Label2: '&'</td><td>'& 'Value2' &'</td></tr>
-       <tr><td>'&'Label3: '&'</td><td>'& 'Value3' &'</td></tr>
-    </table>'
+='<b>' & 'Header' & '</b>' & 
+    '<table>' &
+       '<tr><td>Label0: </td><td> Value0 </td></tr>' &
+       '<tr><td> Label1: </td><td> Value1 </td></tr>' &
+       '<tr><td> Label2: </td><td> Value2 </td></tr>' &
+       '<tr><td>'&'Label3: '&'</td><td>'& 'Value3' &'</td></tr>'
+    & '</table>'
 ```

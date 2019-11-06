@@ -12,6 +12,6 @@ Copy and enjoy it :)
        '<tr><td>Label0: </td><td> Value0 </td></tr>' &
        '<tr><td> Label1: </td><td> Value1 </td></tr>' &
        '<tr><td> Label2: </td><td> Value2 </td></tr>' &
-       '<tr><td>'&'Label3: '&'</td><td>'& 'Value3' &'</td></tr>'
-    & '</table>'
+       '<tr><td>'&'Label3: '&'</td><td>'& 'Value3' &'</td></tr>' &
+    '</table>'
 ```
